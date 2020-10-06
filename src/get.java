@@ -24,8 +24,9 @@ public class get {
             }
             if (inputLine.contains(email)) {
                 String strEmail = inputLine.substring(inputLine.lastIndexOf('.') + 1, inputLine.lastIndexOf('"'));
-                if (strEmail.equals("org") || strEmail.equals("net"))
+                if (strEmail.equals("org") || strEmail.equals("net")) {
                     System.out.println(strName);
+                }
             }
         }
         input.close();
